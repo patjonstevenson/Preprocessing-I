@@ -153,11 +153,27 @@ h1 {
 h3 {
   font-size: 2rem;
 }
+h1,
+h2,
+h3 {
+  padding-bottom: 5px;
+}
+li {
+  font-size: 1.65rem;
+  width: 50%;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+ul {
+  display: flex;
+  flex-wrap: wrap;
+}
 header nav,
 footer nav {
   display: flex;
   align-self: flex-end;
   padding: 0% 0% 0% 40%;
+  width: 100%;
 }
 header nav a,
 footer nav a {
@@ -187,30 +203,32 @@ footer {
   padding-bottom: 5%;
   border-bottom: 2px solid gray;
 }
-#about div {
-  width: 50%;
-}
 #about .aboutInfo {
+  width: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  padding: 5% 0%;
+  justify-content: space-between;
+  padding: 4% 0%;
+}
+#about .aboutInfo .skills {
+  display: flex;
+  flex-direction: column;
+}
+#about .aboutInfo .skills h3 {
+  padding-bottom: 5px;
 }
 #portfolio {
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
 #portfolio .projects {
-  border: 1px solid black;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
 }
 #portfolio .projects .project {
-  border: 1px solid black;
   width: 40%;
   padding: 5%;
 }
