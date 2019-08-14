@@ -134,7 +134,106 @@ table {
   box-sizing: border-box;
 }
 
+/*Mixins*/
+.bordered() {
+  border: 1px solid black;
+}
+
 html,
 body {
   height: 100%;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  padding: 5% 10% 5% 10%;
+}
+
+p {
+  font-size: 1.65rem;
+}
+h2 {
+  font-size: 2.75rem;
+}
+h1 {
+  font-size: 4rem;
+}
+h3 {
+  font-size: 2rem;
+}
+
+header,
+footer {
+  nav {
+    display: flex;
+    align-self: flex-end;
+    padding: 0% 0% 0% 40%;
+    a {
+      text-decoration: none;
+      color: black;
+      padding: 10px 30px;
+      font-size: 2rem;
+    }
+    a:hover {
+      background-color: black;
+      color: white;
+    }
+  }
+}
+header {
+  border-bottom: 2px solid gray;
+  margin-bottom: 5%;
+}
+footer {
+  border-top: 2px solid gray;
+  margin-top: 5%;
+  margin-bottom: 2.5%;
+}
+
+#about {
+  display: flex;
+  justify-content: space-between;
+  margin: 5% 0%;
+  padding-bottom: 5%;
+  border-bottom: 2px solid gray;
+  div {
+    width: 50%;
+  }
+  .aboutInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 5% 0%;
+  }
+}
+
+#portfolio {
+  .bordered();
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  .projects {
+    .bordered();
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    .project {
+      .bordered;
+      width: 40%;
+      padding: 5%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  .contactInfo {
+    display: flex;
+  }
 }
