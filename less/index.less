@@ -136,7 +136,8 @@ table {
 
 /*Mixins*/
 .bordered() {
-  border: 1px solid black;
+  border-bottom: 2px solid gray;
+  padding-bottom: 5%;
 }
 
 .linked() {
@@ -215,12 +216,10 @@ footer {
   }
 }
 header {
-  border-bottom: 2px solid gray;
-  padding-bottom: 2.5%;
-  margin-bottom: 5%;
+  .bordered();
+  margin-bottom: 2.5%;
 }
 footer {
-  border-top: 2px solid gray;
   margin-top: 5%;
   margin-bottom: 2.5%;
   padding-top: 2.5%;
@@ -230,8 +229,8 @@ footer {
   display: flex;
   justify-content: space-around;
   margin: 5% 0%;
-  padding-bottom: 5%;
-  border-bottom: 2px solid gray;
+  .bordered();
+
   .aboutInfo {
     width: 40%;
     display: flex;
@@ -243,15 +242,18 @@ footer {
       display: flex;
       flex-direction: column;
       padding-top: 20px;
+
       h3 {
         padding-bottom: 5px;
       }
     }
   }
+
   @media screen and (max-width: 500px) {
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
+
     .aboutInfo {
       width: 100%;
     }
@@ -259,9 +261,9 @@ footer {
 }
 
 #workHistory {
-  padding-bottom: 5%;
+  .bordered();
+  padding-bottom: 10%;
   margin: 5% 0%;
-  border-bottom: 2px solid gray;
   h2 {
     padding-bottom: 2.5%;
   }
@@ -278,7 +280,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  border-bottom: 2px solid gray;
+  .bordered();
 
   .projects {
     display: flex;
@@ -321,6 +323,7 @@ footer {
   display: flex;
   flex-direction: column;
   margin-top: 5%;
+  .bordered();
   .contactInfo {
     display: flex;
     justify-content: space-between;
