@@ -323,12 +323,6 @@ footer {
   justify-content: space-between;
   padding-top: 5%;
 }
-#contact .contactInfo .form {
-  width: 50%;
-}
-#contact .contactInfo .form form {
-  font-size: 2rem;
-}
 #contact .contactInfo a {
   text-decoration: none;
   color: black;
@@ -338,6 +332,19 @@ footer {
 #contact .contactInfo a:hover {
   background-color: black;
   color: white;
+}
+#contact .contactInfo .form h3 {
+  text-align: center;
+  border-bottom: 1px solid black;
+  margin-bottom: 15px;
+}
+#contact .contactInfo .form form {
+  font-size: 2rem;
+}
+#contact .contactInfo .links h3 {
+  text-align: center;
+  border-bottom: 1px solid black;
+  margin-bottom: 15px;
 }
 @media screen and (max-width: 500px) {
   #contact .contactInfo {

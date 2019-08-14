@@ -328,16 +328,32 @@ footer {
     display: flex;
     justify-content: space-between;
     padding-top: 5%;
+    .linked();
+
     .form {
-      width: 50%;
+      h3 {
+        text-align: center;
+        border-bottom: 1px solid black;
+        margin-bottom: 15px;
+      }
+
       form {
         font-size: 2rem;
       }
     }
-    .linked();
+
+    .links {
+      h3 {
+        text-align: center;
+        border-bottom: 1px solid black;
+        margin-bottom: 15px;
+      }
+    }
+
     @media screen and (max-width: 500px) {
       flex-direction: column;
       margin-bottom: 20px;
+
       .form {
         margin-bottom: 30px;
       }
