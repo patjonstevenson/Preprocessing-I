@@ -186,6 +186,17 @@ footer nav a:hover {
   background-color: black;
   color: white;
 }
+@media screen and (max-width: 500px) {
+  header nav,
+  footer nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  header nav a,
+  footer nav a {
+    border-bottom: 1px solid gray;
+  }
+}
 header {
   border-bottom: 2px solid gray;
   padding-bottom: 2.5%;
@@ -219,6 +230,15 @@ footer {
 #about .aboutInfo .skills h3 {
   padding-bottom: 5px;
 }
+@media screen and (max-width: 500px) {
+  #about {
+    flex-direction: column;
+    align-items: center;
+  }
+  #about .aboutInfo {
+    width: 100%;
+  }
+}
 #portfolio {
   display: flex;
   flex-direction: column;
@@ -233,14 +253,43 @@ footer {
   padding-bottom: 5%;
 }
 #portfolio .projects .project {
+  display: flex;
+  flex-direction: column;
+  justify-content: evenly;
+  align-items: center;
   width: 40%;
   padding: 5%;
   margin-bottom: 5%;
   border-bottom: 1px solid gray;
 }
+#portfolio .projects .project a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 30px;
+  font-size: 2rem;
+}
+#portfolio .projects .project a:hover {
+  background-color: black;
+  color: white;
+}
+#portfolio .projects .project h3 {
+  text-align: center;
+}
+#portfolio .projects .project p {
+  margin-top: 5px;
+}
 #portfolio .projects .project img {
   width: 100%;
   margin-bottom: 25px;
+}
+@media screen and (max-width: 500px) {
+  #portfolio .projects {
+    flex-direction: column;
+    align-items: center;
+  }
+  #portfolio .projects .project {
+    width: 100%;
+  }
 }
 #contact {
   display: flex;
@@ -264,4 +313,14 @@ footer {
 #contact .contactInfo a:hover {
   background-color: black;
   color: white;
+}
+@media screen and (max-width: 500px) {
+  #contact .contactInfo {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  #contact .contactInfo .form {
+    margin-bottom: 30px;
+  }
 }

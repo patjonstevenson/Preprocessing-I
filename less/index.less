@@ -202,6 +202,13 @@ footer {
     align-self: flex-end;
     width: 100%;
     .linked();
+    @media screen and (max-width: 500px) {
+      flex-direction: column;
+      align-items: center;
+      a {
+        border-bottom: 1px solid gray;
+      }
+    }
   }
 }
 header {
@@ -222,10 +229,6 @@ footer {
   margin: 5% 0%;
   padding-bottom: 5%;
   border-bottom: 2px solid gray;
-
-  div img {
-  }
-
   .aboutInfo {
     width: 40%;
     display: flex;
@@ -242,6 +245,13 @@ footer {
       }
     }
   }
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+    align-items: center;
+    .aboutInfo {
+      width: 100%;
+    }
+  }
 }
 
 #portfolio {
@@ -249,6 +259,7 @@ footer {
   flex-direction: column;
   justify-content: space-evenly;
   border-bottom: 2px solid gray;
+
   .projects {
     display: flex;
     flex-wrap: wrap;
@@ -256,13 +267,31 @@ footer {
     align-items: center;
     padding-bottom: 5%;
     .project {
+      display: flex;
+      flex-direction: column;
+      justify-content: evenly;
+      align-items: center;
       width: 40%;
       padding: 5%;
       margin-bottom: 5%;
       border-bottom: 1px solid gray;
+      .linked();
+      h3 {
+        text-align: center;
+      }
+      p {
+        margin-top: 5px;
+      }
       img {
         width: 100%;
         margin-bottom: 25px;
+      }
+    }
+    @media screen and (max-width: 500px) {
+      flex-direction: column;
+      align-items: center;
+      .project {
+        width: 100%;
       }
     }
   }
@@ -280,5 +309,13 @@ footer {
       width: 50%;
     }
     .linked();
+    @media screen and (max-width: 500px) {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+      .form {
+        margin-bottom: 30px;
+      }
+    }
   }
 }
