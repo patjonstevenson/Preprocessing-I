@@ -14,115 +14,125 @@
   </head>
 
   <body>
-    <header>
-      <nav>
-        <a href="#">Home</a>
-        <a href="#about">About</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
+  
+      <header>
+        <nav>
+          <a href="#">Home</a>
+          <a href="#about">About</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
 
-    <section id="about">
-      <div>
-        <img src="./images/profile.jpeg" />
-      </div>
-      <div class="aboutInfo">
-        <div class="intro">
-          <h1>Patrick Stevenson</h1>
-          <h2>Web Development</h2>
-          <p>
-            I am a web developer based out of Southern California. Feel free to
-            contact me with questions regarding availability for future
-            projects.
-          </p>
+      <section id="about">
+        <div>
+          <img src="./images/profile.jpeg" />
         </div>
-        <div class="skills">
-          <h3>Skills</h3>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Less</li>
-            <li>Responsive Design</li>
-          </ul>
+        <div class="aboutInfo">
+          <div class="intro">
+            <h1>Patrick Stevenson</h1>
+            
+            <p>
+              I am a web developer based out of Southern California. Feel free
+              to contact me with questions regarding availability for future
+              projects.
+            </p>
+          </div>
+          <div class="skills">
+            <h3>Skills</h3>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Less</li>
+              <li>Responsive Design</li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </section>
-    <!-- End ABOUT -->
+      </section>
+      <!-- End ABOUT -->
 
-    <section id="workHistory">
-      <table></table>
-    </section>
+      <section id="workHistory">
+        <table></table>
+      </section>
 
-    <section id="portfolio">
-      <div>
-        <h2>Portfolio</h2>
-      </div>
-      <div class="projects">
-        <div class="project">
-          <img
-            src="./images/responsive.jpg"
-            class="projectImage"
-            alt="Webpage with responsive phone view"
-          />
-          <h3>Responsive</h3>
-          <p></p>
+      <section id="portfolio">
+        <div>
+          <h2>Portfolio</h2>
         </div>
-        <div class="project">
-          <img
-            src="./images/sprint.jpg"
-            class="projectImage"
-            alt="Webpage with CSS styling"
-          />
-          <h3>Sprint</h3>
-          <p></p>
+        <div class="projects">
+          <div class="project">
+            <img
+              src="./images/responsive.jpg"
+              class="projectImage"
+              alt="Webpage with responsive phone view"
+            />
+            <h3>Responsive</h3>
+            <p></p>
+          </div>
+          <div class="project">
+            <img
+              src="./images/sprint.jpg"
+              class="projectImage"
+              alt="Webpage with CSS styling"
+            />
+            <h3>Sprint</h3>
+            <p></p>
+          </div>
+          <div class="project">
+            <img
+              src="./images/UI3.jpg"
+              class="projectImage"
+              alt="Webpage with CSS styling"
+            />
+            <h3>User Interface III</h3>
+            <p>User Interface I project with CSS styling and flexbox.</p>
+          </div>
+          <div class="project">
+            <img
+              src="./images/UI1.jpg"
+              class="projectImage"
+              alt="Barebones HTML page"
+            />
+            <h3>User Interface I</h3>
+            <p>Barebones HTML project</p>
+          </div>
         </div>
-        <div class="project">
-          <img
-            src="./images/UI3.jpg"
-            class="projectImage"
-            alt="Webpage with CSS styling"
-          />
-          <h3>User Interface III</h3>
-          <p>User Interface I project with CSS styling and flexbox.</p>
-        </div>
-        <div class="project">
-          <img
-            src="./images/UI1.jpg"
-            class="projectImage"
-            alt="Barebones HTML page"
-          />
-          <h3>User Interface I</h3>
-          <p>Barebones HTML project</p>
-        </div>
-      </div>
-    </section>
-    <!-- End PORTFOLIO-->
+      </section>
+      <!-- End PORTFOLIO-->
 
-    <section id="contact">
-      <div>
-        <h2>Contact</h2>
-      </div>
-      <div class="contactInfo">
-        <div class="form">
-          <form></form>
+      <section id="contact">
+        <div>
+          <h2>Contact</h2>
         </div>
-        <div class="links">
-          <a href="pat.jon.stevenson@gmail.com">Email</a>
-          <a href="github.com/patjonstevenson">GitHub</a>
-          <a href="linkedin.com/in/patjstevenson/">LinkedIn</a>
+        <div class="contactInfo">
+          <div class="form">
+            <form action="https://formspree.io/pat.jon.stevenson@gmail.com" method="POST" />
+              Name: <br>
+              <input type="text" name="name"><br>
+              Email: <br>
+              <input type="email" name="_replyto"><br>
+              Message: <br>
+              <input type="text" name="message"><br>
+              <input type="submit" value="Send">
+            </form>
+          </div>
+          <div class="links">
+            <a href="https://www.github.com/patjonstevenson">GitHub</a><br><br><br>
+            <a href="https://www.linkedin.com/in/patjstevenson/">LinkedIn</a><br>
+          </div>
         </div>
-      </div>
-    </section>
-    <!-- End CONTACT-->
+      </section>
+      <!-- End CONTACT-->
 
-    <footer>
-      <nav>
-        <a href="#">Home</a>
-        <a href="#about">About</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </footer>
+      <footer>
+        <nav>
+          <a href="#">Home</a>
+          <a href="#about">About</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </footer>
+
+    <!-- End BODY-->
   </body>
 </html>
