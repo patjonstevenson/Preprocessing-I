@@ -137,6 +137,7 @@ body {
 }
 html {
   font-size: 62.5%;
+  font-family: "Nanum Gothic", sans-serif;
 }
 body {
   padding: 5% 10% 5% 10%;
@@ -306,6 +307,9 @@ footer {
 #contact .contactInfo .form {
   width: 50%;
 }
+#contact .contactInfo .form form {
+  font-size: 2rem;
+}
 #contact .contactInfo a {
   text-decoration: none;
   color: black;
@@ -319,7 +323,6 @@ footer {
 @media screen and (max-width: 500px) {
   #contact .contactInfo {
     flex-direction: column;
-    align-items: center;
     margin-bottom: 20px;
   }
   #contact .contactInfo .form {
