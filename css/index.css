@@ -313,8 +313,8 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  align-items: center;
-  padding-bottom: 5%;
+  align-items: flex-end;
+  padding-top: 2.5%;
 }
 #portfolio .projects a {
   text-decoration: none;
