@@ -153,7 +153,7 @@ p {
   font-size: 1.65rem;
 }
 h2 {
-  font-size: 2.75rem;
+  font-size: 3rem;
 }
 h1 {
   font-size: 4rem;
@@ -165,6 +165,10 @@ h1,
 h2,
 h3 {
   padding-bottom: 5px;
+}
+h1,
+h2 {
+  font-family: "Libre Caslon Display", serif;
 }
 li {
   font-size: 1.65rem;
@@ -244,6 +248,13 @@ footer {
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
+  }
+  #about img {
+    margin-top: 7%;
+    height: 40vh;
+  }
+  #about h1 {
+    text-align: center;
   }
   #about .aboutInfo {
     width: 100%;
@@ -373,6 +384,9 @@ footer {
 }
 #contact .contactInfo .form form {
   font-size: 2rem;
+}
+#contact .contactInfo .form input {
+  font-size: 1.65rem;
 }
 #contact .contactInfo .links {
   display: flex;
