@@ -232,6 +232,7 @@ footer {
 }
 #about .aboutInfo .skills h3 {
   padding-bottom: 5px;
+  margin-bottom: 2.5%;
 }
 @media screen and (max-width: 500px) {
   #about {
