@@ -164,6 +164,10 @@ body {
 html {
   font-size: 62.5%;
   font-family: "Nanum Gothic", sans-serif;
+
+  @media screen and (max-width: 1000px) {
+    font-size: 175%;
+  }
 }
 body {
   padding: 5% 10% 5% 10%;
@@ -208,7 +212,7 @@ footer {
     align-self: flex-end;
     width: 100%;
     .linked();
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 1000px) {
       flex-direction: column;
       align-items: center;
       margin-bottom: 20px;
@@ -254,7 +258,7 @@ footer {
     }
   }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 1000px) {
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
@@ -277,6 +281,8 @@ footer {
     .labels {
       font-weight: bold;
       text-align: left;
+    }
+    @media screen and (max-width: 1000px) {
     }
   }
 }
@@ -314,7 +320,7 @@ footer {
         margin-bottom: 25px;
       }
     }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 1000px) {
       flex-direction: column;
       align-items: center;
       .project {
@@ -358,7 +364,7 @@ footer {
       }
     }
 
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 1000px) {
       flex-direction: column;
       margin-bottom: 20px;
 

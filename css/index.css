@@ -141,6 +141,11 @@ html {
   font-size: 62.5%;
   font-family: "Nanum Gothic", sans-serif;
 }
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 175%;
+  }
+}
 body {
   padding: 5% 10% 5% 10%;
 }
@@ -189,7 +194,7 @@ footer nav a:hover {
   background-color: black;
   color: white;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1000px) {
   header nav,
   footer nav {
     flex-direction: column;
@@ -234,7 +239,7 @@ footer {
   padding-bottom: 5px;
   margin-bottom: 2.5%;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1000px) {
   #about {
     flex-direction: column;
     align-items: center;
@@ -304,7 +309,7 @@ footer {
   width: 100%;
   margin-bottom: 25px;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1000px) {
   #portfolio .projects {
     flex-direction: column;
     align-items: center;
@@ -352,7 +357,7 @@ footer {
   border-bottom: 1px solid black;
   margin-bottom: 15px;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1000px) {
   #contact .contactInfo {
     flex-direction: column;
     margin-bottom: 20px;
