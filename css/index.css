@@ -147,7 +147,7 @@ html {
   }
 }
 body {
-  padding: 5% 10% 5% 10%;
+  margin: 2.5% 10% auto;
 }
 p {
   font-size: 1.65rem;
@@ -316,6 +316,16 @@ footer {
   align-items: center;
   padding-bottom: 5%;
 }
+#portfolio .projects a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 30px;
+  font-size: 2rem;
+}
+#portfolio .projects a:hover {
+  background-color: black;
+  color: white;
+}
 #portfolio .projects .project {
   display: flex;
   flex-direction: column;
@@ -345,6 +355,13 @@ footer {
 #portfolio .projects .project img {
   width: 100%;
   margin-bottom: 25px;
+}
+#portfolio .projects .project:hover {
+  background-color: black;
+  color: white;
+}
+#portfolio .projects .project:hover a {
+  color: white;
 }
 @media screen and (max-width: 1000px) {
   #portfolio .projects {
@@ -387,6 +404,17 @@ footer {
 }
 #contact .contactInfo .form input {
   font-size: 1.65rem;
+}
+#contact .contactInfo .form input[type="submit"] {
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  padding: 10px 30px;
+  font-size: 2rem;
+}
+#contact .contactInfo .form input[type="submit"]:hover {
+  background-color: black;
+  color: white;
 }
 #contact .contactInfo .links {
   display: flex;
