@@ -265,6 +265,32 @@ footer {
   font-weight: bold;
   text-align: left;
 }
+@media screen and (max-width: 1000px) {
+  #workHistory {
+    display: none;
+  }
+}
+#workHistoryMobile {
+  display: none;
+  border-bottom: 2px solid gray;
+  padding-bottom: 5%;
+  margin-bottom: 5%;
+}
+#workHistoryMobile .job {
+  padding: 2.5% 0%;
+}
+#workHistoryMobile h3 {
+  font-size: 2rem;
+}
+#workHistoryMobile p {
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 1000px) {
+  #workHistoryMobile {
+    display: flex;
+    flex-direction: column;
+  }
+}
 #portfolio {
   display: flex;
   flex-direction: column;

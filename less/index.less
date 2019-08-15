@@ -273,17 +273,44 @@ footer {
   .bordered();
   padding-bottom: 10%;
   margin: 5% 0%;
+
   h2 {
     padding-bottom: 2.5%;
   }
+
   table {
     font-size: @standard-font-size;
     .labels {
       font-weight: bold;
       text-align: left;
     }
-    @media screen and (max-width: 1000px) {
-    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    display: none;
+  }
+}
+
+#workHistoryMobile {
+  display: none;
+  .bordered();
+  margin-bottom: 5%;
+
+  .job {
+    padding: 2.5% 0%;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  @media screen and (max-width: 1000px) {
+    display: flex;
+    flex-direction: column;
   }
 }
 
