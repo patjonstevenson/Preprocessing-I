@@ -164,9 +164,14 @@ body {
 html {
   font-size: 62.5%;
   font-family: "Nanum Gothic", sans-serif;
+
+  @media screen and (max-width: 1000px) {
+    font-size: 175%;
+  }
 }
 body {
-  padding: 5% 10% 5% 10%;
+  //padding: 5% 10% 5% 10%;
+  margin: 2.5% 10% auto;
 }
 
 .body {
@@ -177,7 +182,7 @@ p {
 }
 
 h2 {
-  font-size: 2.75rem;
+  font-size: 3rem;
 }
 h1 {
   font-size: 4rem;
@@ -189,6 +194,10 @@ h1,
 h2,
 h3 {
   padding-bottom: 5px;
+}
+h1,
+h2 {
+  font-family: "Libre Caslon Display", serif;
 }
 li {
   font-size: @standard-font-size;
@@ -208,12 +217,14 @@ footer {
     align-self: flex-end;
     width: 100%;
     .linked();
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 1000px) {
       flex-direction: column;
       align-items: center;
       margin-bottom: 20px;
       a {
         border-bottom: 1px solid gray;
+        width: 100%;
+        text-align: center;
       }
     }
   }
@@ -254,10 +265,19 @@ footer {
     }
   }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 1000px) {
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
+
+    img {
+      margin-top: 7%;
+      height: 40vh;
+    }
+
+    h1 {
+      text-align: center;
+    }
 
     .aboutInfo {
       width: 100%;
@@ -269,15 +289,44 @@ footer {
   .bordered();
   padding-bottom: 10%;
   margin: 5% 0%;
+
   h2 {
     padding-bottom: 2.5%;
   }
+
   table {
     font-size: @standard-font-size;
     .labels {
       font-weight: bold;
       text-align: left;
     }
+  }
+
+  @media screen and (max-width: 1000px) {
+    display: none;
+  }
+}
+
+#workHistoryMobile {
+  display: none;
+  .bordered();
+  margin-bottom: 5%;
+
+  .job {
+    padding: 2.5% 0%;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  @media screen and (max-width: 1000px) {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -291,32 +340,48 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: center;
-    padding-bottom: 5%;
+    align-items: flex-end;
+    padding-top: 2.5%;
+    .linked();
+
     .project {
       display: flex;
       flex-direction: column;
-      justify-content: evenly;
+      justify-content: space-evenly;
       align-items: center;
       width: 40%;
       padding: 5%;
       margin-bottom: 5%;
       border-bottom: 1px solid gray;
       .linked();
+
       h3 {
         text-align: center;
       }
+
       p {
         margin-top: 5px;
       }
+
       img {
         width: 100%;
         margin-bottom: 25px;
       }
     }
-    @media screen and (max-width: 500px) {
+
+    .project:hover {
+      background-color: black;
+      color: white;
+
+      a {
+        color: white;
+      }
+    }
+
+    @media screen and (max-width: 1000px) {
       flex-direction: column;
       align-items: center;
+
       .project {
         width: 100%;
       }
@@ -329,6 +394,7 @@ footer {
   flex-direction: column;
   margin-top: 5%;
   .bordered();
+
   .contactInfo {
     display: flex;
     justify-content: space-between;
@@ -345,6 +411,23 @@ footer {
       form {
         font-size: 2rem;
       }
+
+      input {
+        font-size: 1.65rem;
+      }
+
+      input[type="submit"] {
+        text-decoration: none;
+        background-color: white;
+        color: black;
+        padding: 10px 30px;
+        font-size: 2rem;
+      }
+
+      input[type="submit"]:hover {
+        background-color: black;
+        color: white;
+      }
     }
 
     .links {
@@ -358,7 +441,7 @@ footer {
       }
     }
 
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 1000px) {
       flex-direction: column;
       margin-bottom: 20px;
 

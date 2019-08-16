@@ -141,14 +141,19 @@ html {
   font-size: 62.5%;
   font-family: "Nanum Gothic", sans-serif;
 }
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 175%;
+  }
+}
 body {
-  padding: 5% 10% 5% 10%;
+  margin: 2.5% 10% auto;
 }
 p {
   font-size: 1.65rem;
 }
 h2 {
-  font-size: 2.75rem;
+  font-size: 3rem;
 }
 h1 {
   font-size: 4rem;
@@ -160,6 +165,10 @@ h1,
 h2,
 h3 {
   padding-bottom: 5px;
+}
+h1,
+h2 {
+  font-family: "Libre Caslon Display", serif;
 }
 li {
   font-size: 1.65rem;
@@ -189,7 +198,7 @@ footer nav a:hover {
   background-color: black;
   color: white;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1000px) {
   header nav,
   footer nav {
     flex-direction: column;
@@ -199,6 +208,8 @@ footer nav a:hover {
   header nav a,
   footer nav a {
     border-bottom: 1px solid gray;
+    width: 100%;
+    text-align: center;
   }
 }
 header {
@@ -234,11 +245,18 @@ footer {
   padding-bottom: 5px;
   margin-bottom: 2.5%;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1000px) {
   #about {
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
+  }
+  #about img {
+    margin-top: 7%;
+    height: 40vh;
+  }
+  #about h1 {
+    text-align: center;
   }
   #about .aboutInfo {
     width: 100%;
@@ -260,6 +278,32 @@ footer {
   font-weight: bold;
   text-align: left;
 }
+@media screen and (max-width: 1000px) {
+  #workHistory {
+    display: none;
+  }
+}
+#workHistoryMobile {
+  display: none;
+  border-bottom: 2px solid gray;
+  padding-bottom: 5%;
+  margin-bottom: 5%;
+}
+#workHistoryMobile .job {
+  padding: 2.5% 0%;
+}
+#workHistoryMobile h3 {
+  font-size: 2rem;
+}
+#workHistoryMobile p {
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 1000px) {
+  #workHistoryMobile {
+    display: flex;
+    flex-direction: column;
+  }
+}
 #portfolio {
   display: flex;
   flex-direction: column;
@@ -271,13 +315,23 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  align-items: center;
-  padding-bottom: 5%;
+  align-items: flex-end;
+  padding-top: 2.5%;
+}
+#portfolio .projects a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 30px;
+  font-size: 2rem;
+}
+#portfolio .projects a:hover {
+  background-color: black;
+  color: white;
 }
 #portfolio .projects .project {
   display: flex;
   flex-direction: column;
-  justify-content: evenly;
+  justify-content: space-evenly;
   align-items: center;
   width: 40%;
   padding: 5%;
@@ -304,7 +358,14 @@ footer {
   width: 100%;
   margin-bottom: 25px;
 }
-@media screen and (max-width: 500px) {
+#portfolio .projects .project:hover {
+  background-color: black;
+  color: white;
+}
+#portfolio .projects .project:hover a {
+  color: white;
+}
+@media screen and (max-width: 1000px) {
   #portfolio .projects {
     flex-direction: column;
     align-items: center;
@@ -343,6 +404,20 @@ footer {
 #contact .contactInfo .form form {
   font-size: 2rem;
 }
+#contact .contactInfo .form input {
+  font-size: 1.65rem;
+}
+#contact .contactInfo .form input[type="submit"] {
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  padding: 10px 30px;
+  font-size: 2rem;
+}
+#contact .contactInfo .form input[type="submit"]:hover {
+  background-color: black;
+  color: white;
+}
 #contact .contactInfo .links {
   display: flex;
   flex-direction: column;
@@ -352,7 +427,7 @@ footer {
   border-bottom: 1px solid black;
   margin-bottom: 15px;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1000px) {
   #contact .contactInfo {
     flex-direction: column;
     margin-bottom: 20px;
