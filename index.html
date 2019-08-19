@@ -1,19 +1,205 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
 
-  <title>My Resume</title>
+    <title>My Resume</title>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Libre+Caslon+Display&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/index.css" />
 
-  <link rel="stylesheet" href="css/index.css">
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+  </head>
 
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
-</head>
+  <body>
+  
+      <header>
+        <nav>
+          <a href="#">Home</a>
+          <a href="#about">About</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
 
-<body>
-  <h1>My Resume</h1>
-</body>
+      <section id="about">
+        <div>
+          <img src="./images/profile.jpeg" />
+        </div>
+        <div class="aboutInfo">
+          <div class="intro">
+            <h1>Patrick Stevenson</h1>
+            
+            <p>
+              I am a web developer based out of Southern California. Feel free
+              to contact me with questions regarding availability for future
+              projects.
+            </p>
+          </div>
+          <div class="skills">
+            <h3>Skills</h3>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Less</li>
+              <li>Linux</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- End ABOUT -->
+
+      <section id="workHistory">
+        <h2>Work History</h2>
+        <table style="width:100%">
+          <tr class="labels">
+            <th>Company</th>
+            <th>Position</th> 
+            <th>Years</th>
+          </tr>
+          <tr>
+            <td>Boething Treeland Farms</td>
+            <td>Field Laborer</td>
+            <td>2018-2019</td>
+          </tr>
+          <tr>
+            <td>Brentwood Marketing</td>
+            <td>Sales Associate</td>
+            <td>2017</td>
+          </tr>
+          <tr>
+            <td>Garlo's Aussie Pie Shop</td>
+            <td>Food Laborer</td>
+            <td>2015-2016</td>
+          </tr>
+          <tr>
+            <td>Scenario Digital Media</td>
+            <td>Marketing Manager</td>
+            <td>2013-2014</td>
+          </tr>
+        </table>
+      </section>
+
+      <section id="workHistoryMobile">
+        <h2>Work History</h2>
+        <div class="job">
+          <h3>Boething Treeland Farms</h3>
+          <p>Field Laborer 2018-2019</p>
+        </div>
+        <div class="job">
+            <h3>Brentwood Marketing</h3>
+            <p>Sales Associate 2017</p>
+        </div>
+          <div class="job">
+            <h3>Garlo's Aussie Pie Shop</h3>
+            <p>Food Laborer 2015-2016</p>
+            </div>
+          <div class="job">
+            <h3>Scenario Digital Media</h3>
+            <p>Marketing Manager 2013-2014</p>
+            </div>
+      </section>
+
+
+      <section id="portfolio">
+        <div>
+          <h2>Portfolio</h2>
+        </div>
+        <div class="projects">
+          
+            <div class="project">
+              <a href="https://github.com/patjonstevenson/responsive-web-design-I">
+                <img
+                  src="./images/responsive.jpg"
+                  class="projectImage"
+                  alt="Webpage with responsive phone view"
+                />           
+                <h3>Responsive Design I</h3>
+                <p>Project with responsive design using CSS media queries.</p>
+              </a>
+            </div>
+          
+          
+            <div class="project">
+              <a href="https://github.com/patjonstevenson/Sprint-Challenge--User-Interface">
+                <img
+                  src="./images/sprint.jpg"
+                  class="projectImage"
+                  alt="Webpage with CSS styling"
+                />
+                <h3>Sprint</h3>
+                <p>Week 1 Sprint project from Lambda School. Incorporates CSS flexbox.</p>
+              </a>
+            </div>
+          
+          
+            <div class="project">
+              <a href="https://github.com/patjonstevenson/UI-III-Flexbox">
+                </a><img
+                  src="./images/UI3.jpg"
+                  class="projectImage"
+                  alt="Webpage with CSS styling"
+                />
+                <h3>User Interface III</h3>
+                <p>User Interface I project with CSS styling and flexbox.</p>
+              </a>
+            </div>
+          
+          
+            <div class="project">
+              <a href="https://github.com/patjonstevenson/User-Interface">
+                <img
+                  src="./images/UI1.jpg"
+                  class="projectImage"
+                  alt="Barebones HTML page"
+                />
+                <h3>User Interface I</h3>
+                <p>Barebones HTML project from Lambda School Week 1.</p>
+              </a>
+            </div>
+          
+        </div>
+      </section>
+      <!-- End PORTFOLIO-->
+
+      <section id="contact">
+        <div>
+          <h2>Contact</h2>
+        </div>
+        <div class="contactInfo">
+          <div class="form">
+            <h3>Email</h3>
+            <form action="https://formspree.io/pat.jon.stevenson@gmail.com" method="POST" />
+              Name: <br>
+              <input type="text" name="name"><br>
+              Email: <br>
+              <input type="email" name="_replyto"><br>
+              Message: <br>
+              <input type="text" name="message"><br>
+              <input type="submit" value="Send">
+            </form>
+          </div>
+          <div class="links">
+            <h3>Social</h3>
+            <a href="https://www.github.com/patjonstevenson">GitHub</a><br><br><br>
+            <a href="https://www.linkedin.com/in/patjstevenson/">LinkedIn</a><br>
+          </div>
+        </div>
+      </section>
+      <!-- End CONTACT-->
+
+      <footer>
+        <nav>
+          <a href="#">Home</a>
+          <a href="#about">About</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </footer>
+
+    <!-- End BODY-->
+  </body>
 </html>

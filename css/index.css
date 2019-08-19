@@ -1,1 +1,438 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+/* Variables */
+/* Mixins */
+html,
+body {
+  height: 100%;
+  line-height: 1.65;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Nanum Gothic", sans-serif;
+}
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 175%;
+  }
+}
+body {
+  margin: 2.5% 10% auto;
+}
+p {
+  font-size: 1.65rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h1 {
+  font-size: 4rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h1,
+h2,
+h3 {
+  padding-bottom: 5px;
+}
+h1,
+h2 {
+  font-family: "Libre Caslon Display", serif;
+}
+li {
+  font-size: 1.65rem;
+  width: 50%;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+header nav,
+footer nav {
+  display: flex;
+  align-self: flex-end;
+  width: 100%;
+}
+header nav a,
+footer nav a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 30px;
+  font-size: 2rem;
+}
+header nav a:hover,
+footer nav a:hover {
+  background-color: black;
+  color: white;
+}
+@media screen and (max-width: 1000px) {
+  header nav,
+  footer nav {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  header nav a,
+  footer nav a {
+    border-bottom: 1px solid gray;
+    width: 100%;
+    text-align: center;
+  }
+}
+header {
+  border-bottom: 2px solid gray;
+  padding-bottom: 5%;
+  margin-bottom: 2.5%;
+}
+footer {
+  margin-top: 5%;
+  margin-bottom: 2.5%;
+  padding-top: 2.5%;
+}
+#about {
+  display: flex;
+  justify-content: space-around;
+  margin: 5% 0%;
+  border-bottom: 2px solid gray;
+  padding-bottom: 5%;
+}
+#about .aboutInfo {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 4% 0%;
+}
+#about .aboutInfo .skills {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+#about .aboutInfo .skills h3 {
+  padding-bottom: 5px;
+  margin-bottom: 2.5%;
+}
+@media screen and (max-width: 1000px) {
+  #about {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+  #about img {
+    margin-top: 7%;
+    height: 40vh;
+  }
+  #about h1 {
+    text-align: center;
+  }
+  #about .aboutInfo {
+    width: 100%;
+  }
+}
+#workHistory {
+  border-bottom: 2px solid gray;
+  padding-bottom: 5%;
+  padding-bottom: 10%;
+  margin: 5% 0%;
+}
+#workHistory h2 {
+  padding-bottom: 2.5%;
+}
+#workHistory table {
+  font-size: 1.65rem;
+}
+#workHistory table .labels {
+  font-weight: bold;
+  text-align: left;
+}
+@media screen and (max-width: 1000px) {
+  #workHistory {
+    display: none;
+  }
+}
+#workHistoryMobile {
+  display: none;
+  border-bottom: 2px solid gray;
+  padding-bottom: 5%;
+  margin-bottom: 5%;
+}
+#workHistoryMobile .job {
+  padding: 2.5% 0%;
+}
+#workHistoryMobile h3 {
+  font-size: 2rem;
+}
+#workHistoryMobile p {
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 1000px) {
+  #workHistoryMobile {
+    display: flex;
+    flex-direction: column;
+  }
+}
+#portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-bottom: 2px solid gray;
+  padding-bottom: 5%;
+}
+#portfolio .projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  padding-top: 2.5%;
+}
+#portfolio .projects a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 30px;
+  font-size: 2rem;
+}
+#portfolio .projects a:hover {
+  background-color: black;
+  color: white;
+}
+#portfolio .projects .project {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 40%;
+  padding: 5%;
+  margin-bottom: 5%;
+  border-bottom: 1px solid gray;
+}
+#portfolio .projects .project a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 30px;
+  font-size: 2rem;
+}
+#portfolio .projects .project a:hover {
+  background-color: black;
+  color: white;
+}
+#portfolio .projects .project h3 {
+  text-align: center;
+}
+#portfolio .projects .project p {
+  margin-top: 5px;
+}
+#portfolio .projects .project img {
+  width: 100%;
+  margin-bottom: 25px;
+}
+#portfolio .projects .project:hover {
+  background-color: black;
+  color: white;
+}
+#portfolio .projects .project:hover a {
+  color: white;
+}
+@media screen and (max-width: 1000px) {
+  #portfolio .projects {
+    flex-direction: column;
+    align-items: center;
+  }
+  #portfolio .projects .project {
+    width: 100%;
+  }
+}
+#contact {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  border-bottom: 2px solid gray;
+  padding-bottom: 5%;
+}
+#contact .contactInfo {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5%;
+}
+#contact .contactInfo a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 30px;
+  font-size: 2rem;
+}
+#contact .contactInfo a:hover {
+  background-color: black;
+  color: white;
+}
+#contact .contactInfo .form h3 {
+  text-align: center;
+  border-bottom: 1px solid black;
+  margin-bottom: 15px;
+}
+#contact .contactInfo .form form {
+  font-size: 2rem;
+}
+#contact .contactInfo .form input {
+  font-size: 1.65rem;
+}
+#contact .contactInfo .form input[type="submit"] {
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  padding: 10px 30px;
+  font-size: 2rem;
+}
+#contact .contactInfo .form input[type="submit"]:hover {
+  background-color: black;
+  color: white;
+}
+#contact .contactInfo .links {
+  display: flex;
+  flex-direction: column;
+}
+#contact .contactInfo .links h3 {
+  text-align: center;
+  border-bottom: 1px solid black;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 1000px) {
+  #contact .contactInfo {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  #contact .contactInfo .form {
+    margin-bottom: 30px;
+  }
+}
